@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owez</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/splide.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark" aria-label="Navbar">
+        <div class="container-lg">
+            <a class="navbar-brand fw-bold text-light" href="#">SIXTEEN <span
+                    class="text-danger fw-bold">CLOTHING</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold me-lg-4 text-light" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold me-lg-4 text-light" href="#">Our Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold me-lg-4 text-light" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold me-lg-4 text-light" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-lg">
+        <div class="splide" role="group" aria-label="Splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="position-relative">
+                            <img src="img/slide_01.jpg" alt="" class="img-fluid">
+                            <div class="position-absolute top-50 start-50 translate-middle">
+                                <div class="fw-bold text-danger text-center">
+                                    BEST OFFER
+                                </div>
+                                <div class="text-white display-5 fw-bold justify-content-center">
+                                    NEW ARRIVALS ON SALE
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="position-relative">
+                            <img src="img/slide_02.jpg" alt="" class="img-fluid">
+                            <div class="position-absolute top-50 start-50 translate-middle">
+                                <div class="fw-bold text-danger text-center">
+                                    BEST OFFER
+                                </div>
+                                <div class="text-white display-5 fw-bold justify-content-center">
+                                    NEW ARRIVALS ON SALE
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="position-relative">
+                            <img src="img/slide_03.jpg" alt="" class="img-fluid">
+                            <div class="position-absolute top-50 start-50 translate-middle">
+                                <div class="fw-bold text-danger text-center">
+                                    BEST OFFER
+                                </div>
+                                <div class="text-white display-5 fw-bold justify-content-center">
+                                    NEW ARRIVALS ON SALE
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <style>
+        .splide__pagination {
+            margin-bottom: 1rem;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var splide = new Splide('.splide', {
+                type: "loop",
+                autoplay: 1,
+                arrows: 0,
+                interval: 3e3,
+                pauseOnHover: 0,
+                perMove: 1,
+                perPage: 1,
+                gap: "1.5rem",
+            });
+            splide.mount();
+        });
+    </script>
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/splide.min.js"></script>
+</body>
+
+</html>
